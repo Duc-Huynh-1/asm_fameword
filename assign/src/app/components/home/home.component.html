@@ -1,0 +1,39 @@
+<div class="content mx-[30px] mt-[30px]">
+  <app-slideshow></app-slideshow>
+  <!-- banner -->
+  <div class="flex mx-[100px] mt-[100px]">
+    <div>
+      <img src="https://themewagon.github.io/trator/images/about-img.png" alt="" width="2000">
+    </div>
+    <div class="ml-[50px]">
+      <h1 class="text-[#3B3B3B] font-semibold text-3xl">
+        ABOUT <span class="text-[#FE5B29]">US</span> </h1>
+      <p class="my-[32px]">going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+        embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
+        Internet tend to repeat predefined going to use a passage of Lorem Ipsum,
+        you need to be sure there isn't anything embarrassing hidden in the middle of text.
+        All the Lorem Ipsum generators on the Internet tend to repeat predefined</p>
+     <a href=""> <button class="text-[18px]  w-[150px] h-[50px] border bg-[#Fe5b29] text-[white] ">Read More</button></a>
+    </div>
+  </div>
+
+  <!--  -->
+  <div>
+    <h1 class="text-2xl font-bold text-[#828282] my-[20px]">Sản Phẩm </h1>
+  </div>
+
+  <!--  -->
+  <div class="active grid grid-cols-3 gap-8 mx-[200px]">
+
+    <div *ngFor="let std of products" class=" text-center  mb-[20px] ">
+      <h1 class="text-[22px] text-[#2f2e2d] font-semibold my-[10px]">{{std.name}}</h1>
+        <img [src]="std.img" alt="" class="mx-auto h-[150px] w-[190px] my-[20px]">
+
+        <p class="text-[18px] text-[#fe5b29] font-semibold my-[10px]">{{ std.price | number:'1.3-3' }} VND</p>
+        <p class="text-[18px] text-[#fe5b29] font-semibold my-[10px]">{{ std.desc}}</p>
+        <a routerLink="details/{{std._id}}" ><button class="text-[18px]  w-[130px] h-[50px] border bg-[#Fe5b29] text-[white] ">Check</button>  </a>
+     
+    </div>
+
+  </div>
+</div>

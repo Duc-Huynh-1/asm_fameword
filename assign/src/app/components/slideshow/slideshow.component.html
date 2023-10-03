@@ -1,0 +1,6 @@
+<div class="slideshow flex justify-center items-center" (mouseenter)="stopSlideshow()" (mouseleave)="startSlideshow()">
+    <button (click)="prevImage()"><i class="fa-solid fa-circle-left absolute  text-[white] text-4xl ml-[25px]"></i></button>
+    
+    <button (click)="nextImage()"><i class="fa-solid fa-circle-right absolute text-4xl text-[white] ml-[530px]"></i></button>
+    <img [src]="images[currentIndex]" alt="Slideshow Image" class="w-[600px] h-[300px] ">
+  </div>

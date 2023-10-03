@@ -1,0 +1,31 @@
+<div class="container my-[30px]">
+  <div>
+    <a href=""><button> <i class="fa-solid fa-angles-left "></i></button></a>
+  </div>
+  <div class=" justify-center">
+   
+    <h1 class="text-3xl font-bold ml-[10px] my-[40px] text-center">Product-detail </h1>
+  </div>
+  <!--  -->
+  <div class="flex mx-[150px] ">
+    <div>
+      <img [src]="products.img" [alt]="products.name" class="mx-auto h-[250px]" />
+    </div>
+
+    <div class="product-detail ml-[120px] mt-[50px] ">
+      <div>
+        <p class="text-[20px] font-medium "> Name : <span  class="text-[#FE5B29] ">{{products.name}}</span></p>
+      </div>
+
+      <div class="my-[10px]">
+        <p class="text-[20px] font-medium "> Price : <span  class="text-[#FE5B29] ">{{ products.price | number:'1.3-3' }} VND</span></p>
+      </div>
+
+      <div>
+        <p class="text-[20px] font-medium "> Desc : <span  class="text-[#FE5B29] ">{{products.desc}}</span></p>
+      </div>
+      
+    </div>
+
+  </div>
+</div>

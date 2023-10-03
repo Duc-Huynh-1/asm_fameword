@@ -1,0 +1,44 @@
+<header class="menu  h-[120px]  bg-[#000000]">
+  <div class="mx-[100px] flex">
+    <div class="my-[10px]">
+      <p class="text-4xl font-bold text-white my-[5px]">Trator</p>
+    </div>
+    <nav class="ml-[250px] my-[20px]">
+      <ul class="flex">
+        <li><a [routerLink]="['/']" class="text-[18px] text-[white] hover:text-[#FE5B29] font-normal ">Home page</a></li>
+        <li><a [routerLink]="['/product']" class="text-[18px] text-[white] hover:text-[#FE5B29] font-normal mx-[32px] ">Product</a></li>
+        <li><a [routerLink]="['admin']" class="text-[18px] text-[white] hover:text-[#FE5B29] font-normal ">Introduce</a></li>
+        <li><a [routerLink]="['#']" class="text-[18px] text-[white] hover:text-[#FE5B29] mx-[32px] font-normal ">Liên Hệ</a></li>
+        <div class="ml-[150px]">
+         <a [routerLink]="'/signin'"> <button class="text-xl text-[white] hover:text-[#FE5B29] font-medium hover:scale-105">Sign in</button></a>
+         <a [routerLink]="'/signup'"> <button class="text-xl text-[white] hover:text-[#FE5B29] ml-[32px] font-medium hover:scale-105">Sign up</button></a>
+        </div>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="h-[50px] bg-[#FE5B29] flex justify-center items-center">
+
+    <a [routerLink]="['/location']" >
+    <div class="flex items-center justify-center  hover:scale-105">
+      <i class="fa-solid fa-location-dot text-white"></i>
+      <p class="text-[20px] text-white  font-light ml-[10px]">Location</p>
+      </div>
+    </a>
+     
+    <a href="">
+    <div class="flex items-center justify-center  hover:scale-105 text-white mx-[200px]">
+      <i class="fa-solid fa-phone "></i>
+      <p class="text-[18px]  font-light ml-[10px] ">(+84)34587956</p>
+    </div>
+  </a>
+
+  <a href="">
+    <div class="flex items-center justify-center  text-white hover:scale-105">
+      <i class="fa-solid fa-envelope text-white"></i>
+      <p class="text-[18px]  font-light ml-[10px]">demo@gmail.com</p>
+    </div>
+  </a>
+  </div>
+</header>
+<!-- end header -->
